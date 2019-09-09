@@ -4,20 +4,20 @@
 <style>
 table
 {
-border: 1px solid black; 
+border: 1px solid white; 
 }
 td,th
 {
-border:5px solid grey; padding:10px; spacing:10px; 
+border:5px solid blue; padding:10px; spacing:10px; 
 }
 
 td:nth-child(1)
 {
-background-color:tomato;
+background-color:skyblue;
 }
 th
 {
-background-color:tomato;
+background-color:skyblue;
 }
 
 </style>
@@ -25,7 +25,7 @@ background-color:tomato;
 </head>
 <body>
 <h1 style="color:blue";><center>TRAIN SCHEDULE</center></h1>
-<form name="tt" method="POST" ref="Train-Schedular.php">
+<form name="tt" method="POST">
 
 <table >
 
@@ -324,7 +324,7 @@ echo"<table >";
 
 echo" <tr> <th>TRAIN DETAILS-:</th> <th>MONDAY</th> <th>TUESDAY</th> <th>WEDNESDAY</th> <th>THURSDAY</th><th>FRIDAY</th> <th>SATURDAY</th> <th>SUNDAY</th></tr>";
 
-echo"<tr> <td><b>TRAIN NO-:$train2<br><hr>TRAIN NAME-:<br>$trainname1<br><hr>TRAIN FROM-:<br>$trainfrom1<br><hr>TRAIN TO-:<br>$trainto1</b></td> <td>TIMING $atm1 - $dtm1<br>$pm1</td> <td>TIMING $att1 - $dtt1<br>$pt1</td><td>TIMING $atw1 - $dtw1<br>$pw1</td><td>TIMING $atth1 - $dtth1<br>$pth1</td><td>TIMING $atf1 - $dtf1<br>$pf1</td><td>TIMING $ats1 - $dts1<br>$ps1</td> <td>TIMING $atsu1 - $dtsu1<br>$psu1</td></tr>";
+echo"<tr> <td><b>TRAIN NO-:$train1<br><hr>TRAIN NAME-:<br>$trainname1<br><hr>TRAIN FROM-:<br>$trainfrom1<br><hr>TRAIN TO-:<br>$trainto1</b></td> <td>TIMING $atm1 - $dtm1<br>$pm1</td> <td>TIMING $att1 - $dtt1<br>$pt1</td><td>TIMING $atw1 - $dtw1<br>$pw1</td><td>TIMING $atth1 - $dtth1<br>$pth1</td><td>TIMING $atf1 - $dtf1<br>$pf1</td><td>TIMING $ats1 - $dts1<br>$ps1</td> <td>TIMING $atsu1 - $dtsu1<br>$psu1</td></tr>";
 
 echo"<tr> <td><b>TRAIN NO-:$train2<br><hr>TRAIN NAME-:<br>$trainname2<br><hr>TRAIN FROM-:<br>$trainfrom2<br><hr>TRAIN TO-:<br>$trainto2</b></td> <td>TIMING $atm2 - $dtm2<br>$pm2</td> <td>TIMING $att2 - $dtt2<br>$pt2</td><td>TIMING $atw2 - $dtw2<br>$pw2</td><td>TIMING $atth2 - $dtth2<br>$pth2</td><td>TIMING $atf2 - $dtf2<br>$pf2</td><td>TIMING $ats2 - $dts2<br>$ps2</td> <td>TIMING $atsu2 - $dtsu2<br>$psu2</td></tr>";
 
