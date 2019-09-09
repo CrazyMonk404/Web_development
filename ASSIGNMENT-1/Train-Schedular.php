@@ -25,12 +25,12 @@ background-color:tomato;
 </head>
 <body>
 <h1 style="color:blue";><center>TRAIN SCHEDULE</center></h1>
-<form name="tt" method="POST">
+<form name="tt" method="POST" ref="Train-Schedular.php">
 
 <table >
 
 <tr>
-<th>TRAIN NO-:</th>
+<th>TRAIN DETAILS-:</th>
 <th>MONDAY</th>
 <th>TUESDAY</th>
 <th>WEDNESDAY</th>
@@ -41,7 +41,7 @@ background-color:tomato;
 </tr>
 
 <tr>
-<td>TRAIN NO-:<br><input type = "number" name="train1"><br>TRAIN NAME-:<br> <input type = "text" name="trainname1"><br></td>
+<td>TRAIN NO-:<br><input type = "number" name="train1"><br>TRAIN NAME-:<br> <input type = "text" name="trainname1"><br>FROM-:<br> <input type = "text" name="trainfrom1"><br>TO-:<br><input type = "text" name="trainto1"><br></td>
 <td> 
 Enter ARRIVAL TIME <input type="time" name="atm1"><br>
 Enter DEPARTURE TIME  <input type="time" name="dtm1"><br>
@@ -95,7 +95,7 @@ CHOOSE PLATFORM<br>
 
 
 <tr>
-<td>TRAIN NO-:<br><input type = "number" name="train2"><br> TRAIN NAME-:<br><input type = "text" name="trainname2"><br></td>
+<td>TRAIN NO-:<br><input type = "number" name="train2"><br> TRAIN NAME-:<br><input type = "text" name="trainname2"><br>FROM-:<br> <input type = "text" name="trainfrom2"><br>TO-:<br><input type = "text" name="trainto2"><br></td>
 <td> 
 Enter ARRIVAL TIME <input type="time" name="atm2"><br>
 Enter DEPARTURE TIME  <input type="time" name="dtm2"><br>
@@ -149,7 +149,7 @@ CHOOSE PLATFORM<br>
 
 
 <tr>
-<td>TRAIN NO-:<br><input type = "number" name="train3"><br> TRAIN NAME-:<br><input type = "text" name="trainname3"><br></td>
+<td>TRAIN NO-:<br><input type = "number" name="train3"><br> TRAIN NAME-:<br><input type = "text" name="trainname3"><br>FROM-:<br> <input type = "text" name="trainfrom3"><br>TO-:<br><input type = "text" name="trainto3"><br></td>
 <td> 
 Enter ARRIVAL TIME <input type="time" name="atm3"><br>
 Enter DEPARTURE TIME  <input type="time" name="dtm3"><br>
@@ -206,7 +206,6 @@ CHOOSE PLATFORM<br>
 </form>
 
 </body>
-
 
 <?php
 if($_POST)
@@ -312,17 +311,24 @@ $trainname1=$_POST['trainname1'];
 $trainname2=$_POST['trainname2'];
 $trainname3=$_POST['trainname3'];
 
+$trainfrom1=$_POST['trainfrom1'];
+$trainto1=$_POST['trainto1'];
+$trainfrom2=$_POST['trainfrom2'];
+$trainto2=$_POST['trainto2'];
+$trainfrom3=$_POST['trainfrom3'];
+$trainto3=$_POST['trainto3'];
+
              /* PRINTING THE WHOLE CHART WITH DETIAILS ENTERED BY USER  */
 
 echo"<table >";
 
-echo" <tr> <th>TRAIN NO-:</th> <th>MONDAY</th> <th>TUESDAY</th> <th>WEDNESDAY</th> <th>THURSDAY</th><th>FRIDAY</th> <th>SATURDAY</th> <th>SUNDAY</th></tr>";
+echo" <tr> <th>TRAIN DETAILS-:</th> <th>MONDAY</th> <th>TUESDAY</th> <th>WEDNESDAY</th> <th>THURSDAY</th><th>FRIDAY</th> <th>SATURDAY</th> <th>SUNDAY</th></tr>";
 
-echo"<tr> <td><b>TRAIN NO-:$train1<br><hr>TRAIN NAME-:<br>$trainname1</b></td> <td>TIMING $atm1 - $dtm1<br>$pm1</td> <td>TIMING $att1 - $dtt1<br>$pt1</td><td>TIMING $atw1 - $dtw1<br>$pw1</td><td>TIMING $atth1 - $dtth1<br>$pth1</td><td>TIMING $atf1 - $dtf1<br>$pf1</td><td>TIMING $ats1 - $dts1<br>$ps1</td> <td>TIMING $atsu1 - $dtsu1<br>$psu1</td></tr>";
+echo"<tr> <td><b>TRAIN NO-:$train2<br><hr>TRAIN NAME-:<br>$trainname1<br><hr>TRAIN FROM-:<br>$trainfrom1<br><hr>TRAIN TO-:<br>$trainto1</b></td> <td>TIMING $atm1 - $dtm1<br>$pm1</td> <td>TIMING $att1 - $dtt1<br>$pt1</td><td>TIMING $atw1 - $dtw1<br>$pw1</td><td>TIMING $atth1 - $dtth1<br>$pth1</td><td>TIMING $atf1 - $dtf1<br>$pf1</td><td>TIMING $ats1 - $dts1<br>$ps1</td> <td>TIMING $atsu1 - $dtsu1<br>$psu1</td></tr>";
 
-echo"<tr> <td><b>TRAIN NO-:$train2<br><hr>TRAIN NAME-:<br>$trainname2</b></td> <td>TIMING $atm2 - $dtm2<br>$pm2</td> <td>TIMING $att2 - $dtt2<br>$pt2</td><td>TIMING $atw2 - $dtw2<br>$pw2</td><td>TIMING $atth2 - $dtth2<br>$pth2</td><td>TIMING $atf2 - $dtf2<br>$pf2</td><td>TIMING $ats2 - $dts2<br>$ps2</td> <td>TIMING $atsu2 - $dtsu2<br>$psu2</td></tr>";
+echo"<tr> <td><b>TRAIN NO-:$train2<br><hr>TRAIN NAME-:<br>$trainname2<br><hr>TRAIN FROM-:<br>$trainfrom2<br><hr>TRAIN TO-:<br>$trainto2</b></td> <td>TIMING $atm2 - $dtm2<br>$pm2</td> <td>TIMING $att2 - $dtt2<br>$pt2</td><td>TIMING $atw2 - $dtw2<br>$pw2</td><td>TIMING $atth2 - $dtth2<br>$pth2</td><td>TIMING $atf2 - $dtf2<br>$pf2</td><td>TIMING $ats2 - $dts2<br>$ps2</td> <td>TIMING $atsu2 - $dtsu2<br>$psu2</td></tr>";
 
-echo"<tr> <td><b>TRAIN NO-:$train3<br><hr>TRAIN NAME-:<br>$trainname3</b></td> <td>TIMING $atm3 - $dtm3<br>$pm3</td> <td>TIMING $att3 - $dtt3<br>$pt3</td><td>TIMING $atw3 - $dtw3<br>$pw3</td><td>TIMING $atth3 - $dtth3<br>$pth3</td><td>TIMING $atf3 - $dtf3<br>$pf3</td><td>TIMING $ats3 - $dts3<br>$ps3</td> <td>TIMING $atsu3 - $dtsu3<br>$psu3</td></tr>";
+echo"<tr> <td><b>TRAIN NO-:$train3<br><hr>TRAIN NAME-:<br>$trainname3<br><hr>TRAIN FROM-:<br>$trainfrom3<br><hr>TRAIN TO-:<br>$trainto3</b></td> <td>TIMING $atm3 - $dtm3<br>$pm3</td> <td>TIMING $att3 - $dtt3<br>$pt3</td><td>TIMING $atw3 - $dtw3<br>$pw3</td><td>TIMING $atth3 - $dtth3<br>$pth3</td><td>TIMING $atf3 - $dtf3<br>$pf3</td><td>TIMING $ats3 - $dts3<br>$ps3</td> <td>TIMING $atsu3 - $dtsu3<br>$psu3</td></tr>";
 
 
 
