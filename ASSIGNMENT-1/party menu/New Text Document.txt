@@ -1,0 +1,11 @@
+
+<br><br><br>Main Course:<br>
+<input type=checkbox name="c[]" value="Dal Tadka "> Dal Tadka <br>
+<input type=checkbox name="c[]" value="Dal Makhani "> Dal Makhani <br>
+<input type=checkbox name="c[]" value="Paneer Butter Masala "> Paneer Butter Masala <br>
+<input type=checkbox name="c[]" value="Shahi Paneer"> Shahi Paneer <br>
+<input type=checkbox name="c[]" value="Kadhai Paneer">  Kadhai Paneer <br>
+<input type=checkbox name="c[]" value="Malai Kofta "> Malai Kofta <br>
+<input type=checkbox name="c[]" value="Butter Chicken"> Butter Chicken</td>
+<td>
+
